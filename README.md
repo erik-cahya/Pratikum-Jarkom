@@ -9,7 +9,7 @@
     Dibuat untuk mempermudah hidup!
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>↓ Explore the docs ↓</strong></a>
+    <a href="https://github.com/erik-cahya/Pratikum-Jarkom"><strong>↓ Explore the docs ↓</strong></a>
     <br />
     <a href="#setting-file-server--samba-">Remote Server</a>
     ·
@@ -86,6 +86,29 @@ file "etc/bind/db.192";
 -  copy lagi file berikut : <br>
 `cp db.127 db.192` <br>
 `cp db.local db.stikom`
+
+-  edit db.192 : `nano db.192`
+```
+    isikan db.192 dengan domain
+    
+    1  IN  PTR  www.stikom.ac.id
+    1  IN  PTR  ns.stikom.ac.id
+```
+-  save
+-  edit db.stikom
+```
+    isikan db.stikom dengan IP Server
+    
+    ns  IN  A  192.168.60.10
+    www  IN  A  192.168.60.10
+```
+-  save
+-  cek named.conf.default.zone : `named-checkconf`
+-  cek db yang sudah dibuat : `name-checkzone db.stikom db.192`
+-  edit ip dns pada nameserver : `nano /etc/resolv.conf`
+-  ganti nameservers dengan ip linux
+-  restart service bind : `systemctl restart bind9`
+-  tinggal nslookup & uji coba di client
 
 
 
