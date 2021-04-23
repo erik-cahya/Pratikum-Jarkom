@@ -14,11 +14,11 @@
     <br />
     <a href="#setting-file-server--samba-">Remote Server</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">File Server</a>
+    <a href="#setting-file-server--samba-">File Server</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">FTP Server</a>
+    <a href="#setting-ftp-server-vsftpd--filezilla">FTP Server</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">DNS</a>
+    <a href="#setting-dns-server-bind-9">DNS</a>
   </p>
 </p>
 
