@@ -1,9 +1,27 @@
-### Setting Server
+<br />
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://www.flaticon.com/svg/vstatic/svg/1135/1135251.svg?token=exp=1619188726~hmac=190e688ffed410020de195342192535b" alt="Logo" width="200" height="200">
+  </a>
+
+  <h3 align="center">Setting Server - Prak Jarkom</h3>
+
+  <p align="center">
+    Dibuat untuk mempermudah hidup!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+  </p>
+</p>
 
 
-
-## Setting Remote Server ( SSH / Putty )
-
+## Setting Remote Server ( SSH / Putty)
 - install : `sudo apt-get install openssh-server`
 - start ssh : `systemctl start ssh`
 - cek openssh : `systemctl status ssh`
