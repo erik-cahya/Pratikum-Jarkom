@@ -1,18 +1,23 @@
 ### Setting Server
 
-### Setting Remote Server ( SSH / Putty )
-1. install : `sudo apt-get install openssh-server`
-2. start ssh : `systemctl start ssh`
-3. cek openssh : `systemctl status ssh`
-4. Login putty menggunakan IP Linux
+
+
+## Setting Remote Server ( SSH / Putty )
+
+- install : `sudo apt-get install openssh-server`
+- start ssh : `systemctl start ssh`
+- cek openssh : `systemctl status ssh`
+- Login putty menggunakan IP Linux
+
+
 
 ### Setting File Server ( SAMBA )
 1. install : `sudo apt-get install samba`
 2. buat folder sharing : `mkdir sharing`
 3. beri akses : `chmod 777 sharing`
-4. buka file config : `nano /etc/samba/smb.conf
+4. buka file config : `nano /etc/samba/smb.conf`
 5. Arahkan kursor ke paling bawah
-6. tambahkan command berikut : <br>
+6. tambahkan command berikut :
 ``` 
 [sharing]
  path = /home/server/sharing 
@@ -26,13 +31,17 @@
 9. tinggal akses ip server di client
 10. beres :) 
  
+ 
+ 
 ### Setting FTP Server (vsftpd & filezilla)
 1. Install `file zilla` di client / windows
 2. Install vstpd di server : `sudo apt-get install vsftpd`
-3. add user : ` adduser erik`
+3. add user : `adduser erik`
 4. enter enter ampe selesai
 5. restart service : `systemctl restart vsftpd`
 6. akses ftp di browser : `ftp://ip_server`
+
+
 
 ### Setting DNS Server (Bind 9)
 1. Install bind9 : `sudo apt-get install bind9`
@@ -54,13 +63,10 @@ zone "60.168.192.in-addr.arpa"{
 type master;
 file "etc/bind/db.192";
 };
-	
 ```
-  
 7. copy lagi file berikut : <br>
 `cp db.127 db.192` <br>
 `cp db.local db.stikom`
-
 
 
 
