@@ -13,12 +13,14 @@
 4. buka file config : `nano /etc/samba/smb.conf
 5. Arahkan kursor ke paling bawah
 6. tambahkan command berikut : <br>
-<em> [sharing] <br>
-      path = /home/server/sharing <br>
-      guest ok = yes <br>
-      read only = no <br>
-      create mode = 0764 <br>
-      directory mode = 0755 <br> </em>
+``` 
+[sharing]
+ path = /home/server/sharing 
+ guest ok = yes 
+ read only = no 
+ create mode = 0764 
+ directory mode = 0755 
+```
 7. save file : `ctrl x -> Y -> enter`
 8. restart samba : `systemctl restart smbd`
 9. tinggal akses ip server di client
@@ -41,19 +43,26 @@
 `cp db.local db.local.bck` <br>
 4. edit file named conf : `nano named.conf.default-zones`
 5. arahkan kursor ke paling bawah
-6. tambahkan command berikut : <br> <p>
-<em>zone "stikom.ac.id"{ <br>
-	type master; <br>
-	file "etc/bind/db.stikom"; <br>
-}; <br><br>
-zone "60.168.192.in-addr.arpa"{ <br>
-	type master; <br>
-	file "etc/bind/db.192"; <br>
-}; <br> </em>
+6. tambahkan command berikut : 
+```
+"stikom.ac.id"{ 
+type master;
+file "etc/bind/db.stikom"; 
+}; 
+
+zone "60.168.192.in-addr.arpa"{
+type master;
+file "etc/bind/db.192";
+};
+	
+```
   
 7. copy lagi file berikut : <br>
 `cp db.127 db.192` <br>
-`cp db.local db.stikom` <br>
+`cp db.local db.stikom`
+
+
+
 
 
 
