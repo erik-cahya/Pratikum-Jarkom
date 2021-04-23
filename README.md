@@ -95,7 +95,7 @@ file "etc/bind/db.192";
     1  IN  PTR  ns.stikom.ac.id
 ```
 -  save
--  edit db.stikom
+-  edit db.stikom : `nano db.stikom`
 ```
     isikan db.stikom dengan IP Server
     
