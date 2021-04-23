@@ -1,6 +1,5 @@
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://www.flaticon.com/svg/vstatic/svg/1135/1135251.svg?token=exp=1619188726~hmac=190e688ffed410020de195342192535b" alt="Logo" width="200" height="200">
   </a>
 
@@ -10,7 +9,7 @@
     Dibuat untuk mempermudah hidup!
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>↓ Explore the docs ↓</strong></a>
     <br />
     <a href="#setting-file-server--samba-">Remote Server</a>
     ·
