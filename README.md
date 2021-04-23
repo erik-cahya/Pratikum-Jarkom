@@ -17,7 +17,7 @@
     ·
     <a href="#setting-ftp-server-vsftpd--filezilla">FTP Server</a>
     ·
-    <a href="#setting-dns-server-bind-9">DNS</a>
+    <a href="#setting-dns-server-bind-9">DNS Server</a>
   </p>
 </p>
 
