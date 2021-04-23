@@ -9,14 +9,16 @@
   <p align="center">
     Dibuat untuk mempermudah hidup!
     <br />
+    <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="#setting-file-server--samba-">View Demo</a>
+    <a href="#setting-file-server--samba-">Remote Server</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">File Server</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">FTP Server</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">DNS</a>
   </p>
 </p>
 
