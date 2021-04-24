@@ -9,7 +9,7 @@
     Dibuat untuk mempermudah hidup!
     <br />
     <br />
-    <a href="https://github.com/erik-cahya/Pratikum-Jarkom"><strong>↓ Explore the docs 😉😊 ↓ </strong></a>
+    <a href="https://github.com/erik-cahya/Pratikum-Jarkom"><strong>↓ Explore the docs 😊 ↓ </strong></a>
     <br />
     <a href="#setting-file-server--samba-">Remote Server</a>
     ·
