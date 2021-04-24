@@ -180,7 +180,7 @@ file "etc/bind/db.192";
 - restart apache : `systemctl restart apache2`
 - pengujian :
 ```
-    buka browser dan ketikkan alamat domain 1 & 2
+    buka browser dan ketikkan alamat domain & sub-domain
 ```
 
 
