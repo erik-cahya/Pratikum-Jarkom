@@ -18,6 +18,10 @@
     <a href="#setting-ftp-server-vsftpd--filezilla">FTP Server</a>
     ·
     <a href="#setting-dns-server-bind-9">DNS Server</a>
+·
+    <a href="#setting-web-server-apache-2">Web Server</a>
+	
+	
   </p>
 </p>
 
