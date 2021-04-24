@@ -110,7 +110,74 @@ file "etc/bind/db.192";
 -  restart service bind : `systemctl restart bind9`
 -  tinggal nslookup & uji coba di client
 
+## Setting Web Server (Apache 2)
+-  install apache2 : `sudo apt-get apache2`
+-  restart service : `systemctl restart apache2`
+-  cek status : `systemctl status apache2`
+-  cek status pada client dengan mengetikkan ip server pada browser
+```
+"jika muncul web apache2 ubuntu default page" berarti sukses
+```
+-  buat 2 direktori untuk domain & subdomain : <br>
+`mkdir /var/www/erik (folder domain)` <br>
+`mkdir /var/www/ns (folder sub-domain)`
 
+-  Masuk ke dalam folder conf : `cd /etc/apache2/sites-available/`
+-  salin 2 file berikut ke dalam folder domain dan subdomain <br>
+`cp 000-default.conf erik.conf` <br>
+`cp 000-default.conf ns.conf`
+
+-  konfigurasi file conf pertama berikut : `nano erik.conf`
+	```
+        * hapus pada bagian #ServerName localhost = ServerName erik.stikom (nama domain)
+        * pada bagian ServerAdmin = ServerAdmin webmaster@erik.stikom
+        * pada bagian DocumentRoot = DocumentRoot /var/www/erik (folder domain)
+	```
+- save
+- konfigurasi file conf kedua berikut : `nano ns.conf`
+	```
+        * hapus pada bagian #ServerName localhost = ServerName ns.erik.stikom (nama sub-domain)
+        * pada bagian ServerAdmin = ServerAdmin webmaster@erik.stikom
+        * pada bagian DocumentRoot = DocumentRoot /var/www/ns (folder sub-domain)
+	```
+- save
+- masuk ke folder stikom : `cd /var/www/erik`
+- tambahkan file html : `nano index.html`
+- isikan dengan script html berikut (bebas juga boleh sih )
+```
+<html>
+<head>
+        <title>Ini adalah site dari erik.stikom</title>
+</head>
+<body>
+        <h1>Ini adalah page site erik.stikom</h1>
+</body
+</html>
+```
+- save
+- masuk ke folder ns : `cd /var/www/ns`
+- tambahkan file html : `nano index.html`
+- isikan dengan script html berikut (bebas juga boleh sih ) 
+```
+<html>
+<head>
+        <title>Ini adalah site dari ns.erik.stikom</title>
+</head>
+<body>
+        <h1>Ini adalah page site ns.erik.stikom</h1>
+</body
+</html>
+```
+- save
+- aktifkan kedua konfigurasi yang dibuat : <br>
+`a2ensite erik.conf`<br>
+`a2ensite ns.conf`<br>
+- nonaktifkan konfigurasi default : `a2dissite 000-default.conf`
+- restart apache : `systemctl restart apache2`
+- pengujian :
+```
+    buka browser dan ketikkan alamat domain 1 & 2
+```
 
 
 
