@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="https://www.flaticon.com/svg/vstatic/svg/1135/1135251.svg?token=exp=1619188726~hmac=190e688ffed410020de195342192535b" alt="Logo" width="200" height="200">
+    <img src="https://image.flaticon.com/icons/png/512/1383/1383395.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">Setting Server - Prak Jarkom</h3>
