@@ -108,7 +108,7 @@ file "etc/bind/db.192";
 ```
 -  save
 -  cek named.conf.default.zone : `named-checkconf`
--  cek db yang sudah dibuat : `name-checkzone db.stikom db.192`
+-  cek db yang sudah dibuat : `named-checkzone db.stikom db.192`
 -  edit ip dns pada nameserver : `nano /etc/resolv.conf`
 -  ganti nameservers dengan ip linux
 -  restart service bind : `systemctl restart bind9`
