@@ -77,7 +77,7 @@
 -  arahkan kursor ke paling bawah
 -  tambahkan command berikut : 
 ```
-"stikom.ac.id"{ 
+zone "stikom.ac.id"{ 
 type master;
 file "etc/bind/db.stikom"; 
 }; 
@@ -115,7 +115,7 @@ file "etc/bind/db.192";
 -  tinggal nslookup & uji coba di client
 
 ## Setting Web Server (Apache 2)
--  install apache2 : `sudo apt-get apache2`
+-  install apache2 : `sudo apt-get install apache2`
 -  restart service : `systemctl restart apache2`
 -  cek status : `systemctl status apache2`
 -  cek status pada client dengan mengetikkan ip server pada browser
