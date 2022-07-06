@@ -63,6 +63,9 @@
 -  enter enter ampe selesai
 -  restart service : `systemctl restart vsftpd`
 -  akses ftp di browser : `ftp://ip_server`
+-  buka `nano /etc/vsftpd.conf`
+-  ganti bagian `anonymous_enable = yes`
+-  dan hilangkan tanda pagar pada bagian `write_enable=YES`
 
 
 
